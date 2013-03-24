@@ -1,0 +1,2 @@
+cd libfreenect
+mkdir build && cd build && CMAKE_OSX_ARCHITECTURES="i386;x86_64" cmake .. && make

@@ -1,0 +1,9 @@
+[submodule "lib/websocketpp"]
+	path = lib/websocketpp
+	url = git://github.com/zaphoyd/websocketpp.git
+[submodule "lib/kinect-sdk/OpenNI2-FreenectDriver"]
+	path = lib/kinect-sdk/OpenNI2-FreenectDriver
+	url = git://github.com/piedar/OpenNI2-FreenectDriver.git
+[submodule "lib/kinect-sdk/libfreenect"]
+	path = lib/kinect-sdk/libfreenect
+	url = git://github.com/OpenKinect/libfreenect.git
