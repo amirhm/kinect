@@ -1,2 +1,3 @@
+port install python
 port install libsub +universal
 port install cmake
