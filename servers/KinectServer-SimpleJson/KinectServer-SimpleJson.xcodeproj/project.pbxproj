@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6DFE79216FF7D7D00A10E65 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DFE78E16FF7D7D00A10E65 /* Server.cpp */; };
+		F6DFE79316FF7D7D00A10E65 /* UserTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DFE79016FF7D7D00A10E65 /* UserTracker.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6DFE7A416FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DF1C691434A7A30029A1B1;
+			remoteInfo = "WebSocket++ Static Library";
+		};
+		F6DFE7A616FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DF1C721434A8280029A1B1;
+			remoteInfo = "WebSocket++ Dynamic Library";
+		};
+		F6DFE7A816FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DF1CD11435ED910029A1B1;
+			remoteInfo = echo_server;
+		};
+		F6DFE7AA16FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B682887D143745F2002BA48B;
+			remoteInfo = chat_client;
+		};
+		F6DFE7AC16FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6CF181C1437C397009295BE;
+			remoteInfo = echo_client;
+		};
+		F6DFE7AE16FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6FE8D4F14730AE900B32547;
+			remoteInfo = policy_test;
+		};
+		F6DFE7B016FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B663884B1487D73200DDAE13;
+			remoteInfo = echo_server_tls;
+		};
+		F6DFE7B216FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6732458148FAEEB00FC2B04;
+			remoteInfo = fuzzing_server;
+		};
+		F6DFE7B416FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6732471148FB0FC00FC2B04;
+			remoteInfo = fuzzing_client;
+		};
+		F6DFE7B616FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B67324891491A16500FC2B04;
+			remoteInfo = broadcast_server;
+		};
+		F6DFE7B816FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B67324A21491A7F100FC2B04;
+			remoteInfo = stress_client;
+		};
+		F6DFE7BA16FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B61A51BF14DC271900456432;
+			remoteInfo = concurrent_server;
+		};
+		F6DFE7BC16FF7D8C00A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6E7E7731505532E00394909;
+			remoteInfo = wsperf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6DFE78016FF7D1200A10E65 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6DFE78216FF7D1200A10E65 /* KinectServer-SimpleJson */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "KinectServer-SimpleJson"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DFE78E16FF7D7D00A10E65 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		F6DFE78F16FF7D7D00A10E65 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		F6DFE79016FF7D7D00A10E65 /* UserTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserTracker.cpp; sourceTree = "<group>"; };
+		F6DFE79116FF7D7D00A10E65 /* UserTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTracker.h; sourceTree = "<group>"; };
+		F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = websocketpp.xcodeproj; path = ../../lib/websocketpp/websocketpp.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6DFE77F16FF7D1200A10E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6DFE77916FF7D1200A10E65 = {
+			isa = PBXGroup;
+			children = (
+				F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */,
+				F6DFE78416FF7D1200A10E65 /* KinectServer-SimpleJson */,
+				F6DFE78316FF7D1200A10E65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6DFE78316FF7D1200A10E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6DFE78216FF7D1200A10E65 /* KinectServer-SimpleJson */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6DFE78416FF7D1200A10E65 /* KinectServer-SimpleJson */ = {
+			isa = PBXGroup;
+			children = (
+				F6DFE78E16FF7D7D00A10E65 /* Server.cpp */,
+				F6DFE78F16FF7D7D00A10E65 /* Server.h */,
+				F6DFE79016FF7D7D00A10E65 /* UserTracker.cpp */,
+				F6DFE79116FF7D7D00A10E65 /* UserTracker.h */,
+			);
+			path = "KinectServer-SimpleJson";
+			sourceTree = "<group>";
+		};
+		F6DFE79516FF7D8C00A10E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6DFE7A516FF7D8C00A10E65 /* libwebsocketpp.a */,
+				F6DFE7A716FF7D8C00A10E65 /* libwebsocketpp.dylib */,
+				F6DFE7A916FF7D8C00A10E65 /* echo_server */,
+				F6DFE7AB16FF7D8C00A10E65 /* chat_client */,
+				F6DFE7AD16FF7D8C00A10E65 /* echo_client */,
+				F6DFE7AF16FF7D8C00A10E65 /* Policy Test */,
+				F6DFE7B116FF7D8C00A10E65 /* echo_server_tls */,
+				F6DFE7B316FF7D8C00A10E65 /* fuzzing_server */,
+				F6DFE7B516FF7D8C00A10E65 /* fuzzing_client */,
+				F6DFE7B716FF7D8C00A10E65 /* broadcast_server */,
+				F6DFE7B916FF7D8C00A10E65 /* stress_client */,
+				F6DFE7BB16FF7D8C00A10E65 /* concurrent_server */,
+				F6DFE7BD16FF7D8C00A10E65 /* wsperf */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6DFE78116FF7D1200A10E65 /* KinectServer-SimpleJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DFE78B16FF7D1200A10E65 /* Build configuration list for PBXNativeTarget "KinectServer-SimpleJson" */;
+			buildPhases = (
+				F6DFE77E16FF7D1200A10E65 /* Sources */,
+				F6DFE77F16FF7D1200A10E65 /* Frameworks */,
+				F6DFE78016FF7D1200A10E65 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KinectServer-SimpleJson";
+			productName = "KinectServer-SimpleJson";
+			productReference = F6DFE78216FF7D1200A10E65 /* KinectServer-SimpleJson */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6DFE77A16FF7D1200A10E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Timothy Prepscius";
+			};
+			buildConfigurationList = F6DFE77D16FF7D1200A10E65 /* Build configuration list for PBXProject "KinectServer-SimpleJson" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6DFE77916FF7D1200A10E65;
+			productRefGroup = F6DFE78316FF7D1200A10E65 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F6DFE79516FF7D8C00A10E65 /* Products */;
+					ProjectRef = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F6DFE78116FF7D1200A10E65 /* KinectServer-SimpleJson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F6DFE7A516FF7D8C00A10E65 /* libwebsocketpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebsocketpp.a;
+			remoteRef = F6DFE7A416FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7A716FF7D8C00A10E65 /* libwebsocketpp.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwebsocketpp.dylib;
+			remoteRef = F6DFE7A616FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7A916FF7D8C00A10E65 /* echo_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_server;
+			remoteRef = F6DFE7A816FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7AB16FF7D8C00A10E65 /* chat_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = chat_client;
+			remoteRef = F6DFE7AA16FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7AD16FF7D8C00A10E65 /* echo_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_client;
+			remoteRef = F6DFE7AC16FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7AF16FF7D8C00A10E65 /* Policy Test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = "Policy Test";
+			path = policy_test;
+			remoteRef = F6DFE7AE16FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7B116FF7D8C00A10E65 /* echo_server_tls */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_server_tls;
+			remoteRef = F6DFE7B016FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7B316FF7D8C00A10E65 /* fuzzing_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fuzzing_server;
+			remoteRef = F6DFE7B216FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7B516FF7D8C00A10E65 /* fuzzing_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fuzzing_client;
+			remoteRef = F6DFE7B416FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7B716FF7D8C00A10E65 /* broadcast_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = broadcast_server;
+			remoteRef = F6DFE7B616FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7B916FF7D8C00A10E65 /* stress_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stress_client;
+			remoteRef = F6DFE7B816FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7BB16FF7D8C00A10E65 /* concurrent_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = concurrent_server;
+			remoteRef = F6DFE7BA16FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DFE7BD16FF7D8C00A10E65 /* wsperf */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wsperf;
+			remoteRef = F6DFE7BC16FF7D8C00A10E65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6DFE77E16FF7D1200A10E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DFE79216FF7D7D00A10E65 /* Server.cpp in Sources */,
+				F6DFE79316FF7D7D00A10E65 /* UserTracker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F6DFE78916FF7D1200A10E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					Ext/include/nite,
+					Ext/include/openni,
+					Ext/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6DFE78A16FF7D1200A10E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					Ext/include/nite,
+					Ext/include/openni,
+					Ext/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6DFE78C16FF7D1200A10E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6DFE78D16FF7D1200A10E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6DFE77D16FF7D1200A10E65 /* Build configuration list for PBXProject "KinectServer-SimpleJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DFE78916FF7D1200A10E65 /* Debug */,
+				F6DFE78A16FF7D1200A10E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DFE78B16FF7D1200A10E65 /* Build configuration list for PBXNativeTarget "KinectServer-SimpleJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DFE78C16FF7D1200A10E65 /* Debug */,
+				F6DFE78D16FF7D1200A10E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6DFE77A16FF7D1200A10E65 /* Project object */;
+}
