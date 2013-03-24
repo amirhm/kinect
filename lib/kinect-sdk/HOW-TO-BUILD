@@ -1,0 +1,16 @@
+1. You need to have libusb +universal and cmake installed.
+sudo ./get-osx-port-install-prereq_sudo-run-this
+
+2. You need to buid libfreenect
+./build-libfreenect
+cd libfreenect/build
+sudo make install
+
+3. You need to build the freenect driver
+./build-freenect-driver
+
+4. You need to get the default installations
+./get-necessary-zips
+
+5. And put everything together
+./assemble-working-freenect-nite

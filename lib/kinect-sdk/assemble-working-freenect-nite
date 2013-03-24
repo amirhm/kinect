@@ -1,0 +1,11 @@
+cp OpenNI2-FreenectDriver/Bin/x64-Release/OpenNI2/Drivers/libFreenectDriver.dylib OpenNI-2.1.0/Redist/OpenNI2/Drivers/
+
+mkdir lib
+pushd lib
+ln -fs ../NiTE-2.0.0/Redist/NiTE2
+ln -fs ../OpenNI-2.2.0-x64/Redist/OpenNI2
+ln -fs ../NiTE-2.0.0/Redist/libNiTE2.dylib
+ln -fs ../OpenNI-2.2.0-x64/Redist/libOpenNI2.dylib
+popd 
+
+
