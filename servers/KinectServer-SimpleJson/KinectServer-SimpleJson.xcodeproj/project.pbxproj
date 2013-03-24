@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		F6DFE79216FF7D7D00A10E65 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DFE78E16FF7D7D00A10E65 /* Server.cpp */; };
 		F6DFE79316FF7D7D00A10E65 /* UserTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DFE79016FF7D7D00A10E65 /* UserTracker.cpp */; };
+		F6DFE7C016FF83D000A10E65 /* libwebsocketpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7A516FF7D8C00A10E65 /* libwebsocketpp.a */; };
+		F6DFE7C816FF84EC00A10E65 /* libboost_chrono-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C216FF84EC00A10E65 /* libboost_chrono-mt.dylib */; };
+		F6DFE7C916FF84EC00A10E65 /* libboost_date_time-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C316FF84EC00A10E65 /* libboost_date_time-mt.dylib */; };
+		F6DFE7CA16FF84EC00A10E65 /* libboost_filesystem-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C416FF84EC00A10E65 /* libboost_filesystem-mt.dylib */; };
+		F6DFE7CB16FF84EC00A10E65 /* libboost_program_options-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C516FF84EC00A10E65 /* libboost_program_options-mt.dylib */; };
+		F6DFE7CC16FF84EC00A10E65 /* libboost_random-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C616FF84EC00A10E65 /* libboost_random-mt.dylib */; };
+		F6DFE7CD16FF84EC00A10E65 /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7C716FF84EC00A10E65 /* libboost_system-mt.dylib */; };
+		F6DFE7CF16FF851F00A10E65 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7CE16FF851F00A10E65 /* libssl.dylib */; };
+		F6DFE7D116FF852500A10E65 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7D016FF852500A10E65 /* libcrypto.dylib */; };
+		F6DFE7D316FF854F00A10E65 /* libboost_regex-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7D216FF854F00A10E65 /* libboost_regex-mt.dylib */; };
+		F6DFE7D516FF856800A10E65 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7D416FF856800A10E65 /* libboost_thread-mt.dylib */; };
+		F6DFE7D916FF87B300A10E65 /* libNiTE2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7D716FF87B300A10E65 /* libNiTE2.dylib */; };
+		F6DFE7DA16FF87B300A10E65 /* libOpenNI2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DFE7D816FF87B300A10E65 /* libOpenNI2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +116,13 @@
 			remoteGlobalIDString = B6E7E7731505532E00394909;
 			remoteInfo = wsperf;
 		};
+		F6DFE7BE16FF83C200A10E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B6DF1C681434A7A30029A1B1;
+			remoteInfo = "WebSocket++ Static Library";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,6 +144,18 @@
 		F6DFE79016FF7D7D00A10E65 /* UserTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserTracker.cpp; sourceTree = "<group>"; };
 		F6DFE79116FF7D7D00A10E65 /* UserTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTracker.h; sourceTree = "<group>"; };
 		F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = websocketpp.xcodeproj; path = ../../lib/websocketpp/websocketpp.xcodeproj; sourceTree = "<group>"; };
+		F6DFE7C216FF84EC00A10E65 /* libboost_chrono-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_chrono-mt.dylib"; path = "Ext/lib/libboost_chrono-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7C316FF84EC00A10E65 /* libboost_date_time-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_date_time-mt.dylib"; path = "Ext/lib/libboost_date_time-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7C416FF84EC00A10E65 /* libboost_filesystem-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_filesystem-mt.dylib"; path = "Ext/lib/libboost_filesystem-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7C516FF84EC00A10E65 /* libboost_program_options-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_program_options-mt.dylib"; path = "Ext/lib/libboost_program_options-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7C616FF84EC00A10E65 /* libboost_random-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_random-mt.dylib"; path = "Ext/lib/libboost_random-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7C716FF84EC00A10E65 /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "Ext/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7CE16FF851F00A10E65 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		F6DFE7D016FF852500A10E65 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		F6DFE7D216FF854F00A10E65 /* libboost_regex-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_regex-mt.dylib"; path = "Ext/lib/libboost_regex-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7D416FF856800A10E65 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "Ext/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
+		F6DFE7D716FF87B300A10E65 /* libNiTE2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libNiTE2.dylib; path = Ext/lib/libNiTE2.dylib; sourceTree = "<group>"; };
+		F6DFE7D816FF87B300A10E65 /* libOpenNI2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI2.dylib; path = Ext/lib/libOpenNI2.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +163,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DFE7C016FF83D000A10E65 /* libwebsocketpp.a in Frameworks */,
+				F6DFE7C816FF84EC00A10E65 /* libboost_chrono-mt.dylib in Frameworks */,
+				F6DFE7C916FF84EC00A10E65 /* libboost_date_time-mt.dylib in Frameworks */,
+				F6DFE7CA16FF84EC00A10E65 /* libboost_filesystem-mt.dylib in Frameworks */,
+				F6DFE7CB16FF84EC00A10E65 /* libboost_program_options-mt.dylib in Frameworks */,
+				F6DFE7CC16FF84EC00A10E65 /* libboost_random-mt.dylib in Frameworks */,
+				F6DFE7CD16FF84EC00A10E65 /* libboost_system-mt.dylib in Frameworks */,
+				F6DFE7D316FF854F00A10E65 /* libboost_regex-mt.dylib in Frameworks */,
+				F6DFE7D116FF852500A10E65 /* libcrypto.dylib in Frameworks */,
+				F6DFE7CF16FF851F00A10E65 /* libssl.dylib in Frameworks */,
+				F6DFE7D516FF856800A10E65 /* libboost_thread-mt.dylib in Frameworks */,
+				F6DFE7D916FF87B300A10E65 /* libNiTE2.dylib in Frameworks */,
+				F6DFE7DA16FF87B300A10E65 /* libOpenNI2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +185,12 @@
 		F6DFE77916FF7D1200A10E65 = {
 			isa = PBXGroup;
 			children = (
+				F6DFE7D016FF852500A10E65 /* libcrypto.dylib */,
+				F6DFE7CE16FF851F00A10E65 /* libssl.dylib */,
 				F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */,
 				F6DFE78416FF7D1200A10E65 /* KinectServer-SimpleJson */,
 				F6DFE78316FF7D1200A10E65 /* Products */,
+				F6DFE7C116FF845B00A10E65 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +233,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F6DFE7C116FF845B00A10E65 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F6DFE7D716FF87B300A10E65 /* libNiTE2.dylib */,
+				F6DFE7D816FF87B300A10E65 /* libOpenNI2.dylib */,
+				F6DFE7D416FF856800A10E65 /* libboost_thread-mt.dylib */,
+				F6DFE7D216FF854F00A10E65 /* libboost_regex-mt.dylib */,
+				F6DFE7C216FF84EC00A10E65 /* libboost_chrono-mt.dylib */,
+				F6DFE7C316FF84EC00A10E65 /* libboost_date_time-mt.dylib */,
+				F6DFE7C416FF84EC00A10E65 /* libboost_filesystem-mt.dylib */,
+				F6DFE7C516FF84EC00A10E65 /* libboost_program_options-mt.dylib */,
+				F6DFE7C616FF84EC00A10E65 /* libboost_random-mt.dylib */,
+				F6DFE7C716FF84EC00A10E65 /* libboost_system-mt.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +264,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F6DFE7BF16FF83C200A10E65 /* PBXTargetDependency */,
 			);
 			name = "KinectServer-SimpleJson";
 			productName = "KinectServer-SimpleJson";
@@ -344,21 +410,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F6DFE7BF16FF83C200A10E65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WebSocket++ Static Library";
+			targetProxy = F6DFE7BE16FF83C200A10E65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		F6DFE78916FF7D1200A10E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -387,8 +461,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -396,7 +470,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -415,6 +489,10 @@
 		F6DFE78C16FF7D1200A10E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Ext/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -422,6 +500,10 @@
 		F6DFE78D16FF7D1200A10E65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Ext/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
