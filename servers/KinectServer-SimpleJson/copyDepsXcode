@@ -1,0 +1,10 @@
+D=$BUILT_PRODUCTS_DIR
+S=$PROJECT_DIR
+
+echo "$S -> $D"
+
+
+pushd $D
+ln -fs $S/../../lib/kinect-sdk/lib/nite/* .
+ln -fs $S/../../lib/kinect-sdk/lib/openni/* .
+popd

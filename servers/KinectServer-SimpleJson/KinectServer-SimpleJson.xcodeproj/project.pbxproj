@@ -128,12 +128,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		F6DFE78016FF7D1200A10E65 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -156,6 +156,7 @@
 		F6DFE7D416FF856800A10E65 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "Ext/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
 		F6DFE7D716FF87B300A10E65 /* libNiTE2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libNiTE2.dylib; path = Ext/lib/libNiTE2.dylib; sourceTree = "<group>"; };
 		F6DFE7D816FF87B300A10E65 /* libOpenNI2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI2.dylib; path = Ext/lib/libOpenNI2.dylib; sourceTree = "<group>"; };
+		F6DFE7DE16FF8B3500A10E65 /* copyDepsXcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyDepsXcode; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +186,7 @@
 		F6DFE77916FF7D1200A10E65 = {
 			isa = PBXGroup;
 			children = (
-				F6DFE7D016FF852500A10E65 /* libcrypto.dylib */,
-				F6DFE7CE16FF851F00A10E65 /* libssl.dylib */,
+				F6DFE7DE16FF8B3500A10E65 /* copyDepsXcode */,
 				F6DFE79416FF7D8C00A10E65 /* websocketpp.xcodeproj */,
 				F6DFE78416FF7D1200A10E65 /* KinectServer-SimpleJson */,
 				F6DFE78316FF7D1200A10E65 /* Products */,
@@ -236,6 +236,8 @@
 		F6DFE7C116FF845B00A10E65 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				F6DFE7D016FF852500A10E65 /* libcrypto.dylib */,
+				F6DFE7CE16FF851F00A10E65 /* libssl.dylib */,
 				F6DFE7D716FF87B300A10E65 /* libNiTE2.dylib */,
 				F6DFE7D816FF87B300A10E65 /* libOpenNI2.dylib */,
 				F6DFE7D416FF856800A10E65 /* libboost_thread-mt.dylib */,
@@ -260,6 +262,7 @@
 				F6DFE77E16FF7D1200A10E65 /* Sources */,
 				F6DFE77F16FF7D1200A10E65 /* Frameworks */,
 				F6DFE78016FF7D1200A10E65 /* CopyFiles */,
+				F6DFE7DD16FF8B1500A10E65 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -397,6 +400,22 @@
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6DFE7DD16FF8B1500A10E65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "/Users/tprepscius/Projects/kinect/servers/KinectServer-SimpleJson/copyDepsXcode";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6DFE77E16FF7D1200A10E65 /* Sources */ = {
