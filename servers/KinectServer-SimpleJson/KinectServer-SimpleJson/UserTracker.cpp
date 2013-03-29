@@ -1,9 +1,10 @@
-/*******************************************************************************
- *                                                                              *
- *   PrimeSense NiTE 2.0 - Simple Skeleton Sample                               *
- *   Copyright (C) 2012 PrimeSense Ltd.                                         *
- *                                                                              *
- *******************************************************************************/
+//
+//  UserTracker.cpp
+//  KinectServer1
+//
+//  Created by Timothy Prepscius on 3/20/13.
+//  Copyright (c) 2013 Timothy Prepscius. All rights reserved.
+//
 
 #include "UserTracker.h"
 
@@ -12,26 +13,32 @@
 #include <termios.h>
 #include <fcntl.h>
 
+// note, nite seems to be sensor centric, I reverse right and left so that right hand
+// is the viewers right hand, not the hand as the sensor sees it
 const char *JOINT_STRINGS[] = {
     
     "head", //JOINT_HEAD,
     "neck", // JOINT_NECK,
     
-    "lshoulder", // JOINT_LEFT_SHOULDER,
     "rshoulder", // JOINT_RIGHT_SHOULDER,
-    "lelbow", // JOINT_LEFT_ELBOW,
+    "lshoulder", // JOINT_LEFT_SHOULDER,
+
     "relbow", // JOINT_RIGHT_ELBOW,
-    "lhand", // JOINT_LEFT_HAND,
+    "lelbow", // JOINT_LEFT_ELBOW,
+
     "rhand", //JOINT_RIGHT_HAND,
+    "lhand", // JOINT_LEFT_HAND,
     
     "torso", //JOINT_TORSO,
     
-    "lhip", // JOINT_LEFT_HIP,
     "rhip", // JOINT_RIGHT_HIP,
-    "lknee", // JOINT_LEFT_KNEE,
+    "lhip", // JOINT_LEFT_HIP,
+
     "rknee", // JOINT_RIGHT_KNEE,
-    "lfoot", // JOINT_LEFT_FOOT,
-    "rfoot" // JOINT_RIGHT_FOOT,
+    "lknee", // JOINT_LEFT_KNEE,
+
+    "rfoot", // JOINT_RIGHT_FOOT,
+    "lfoot" // JOINT_LEFT_FOOT,
 };
 
 int wasKeyboardHit()
