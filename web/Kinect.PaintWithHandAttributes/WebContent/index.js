@@ -6,6 +6,8 @@ canvasHeight= null;
 cavnasWidth = null;
 cwd2=null;
 chd2=null;
+THRESHOLD = 0.1;
+SPEED_THRESHOLD = 10;
 
 rhand=[0,0,0];
 lhand=[0,0,0];
@@ -35,8 +37,11 @@ function convertToPoint(points, hand)
 	if (c < 0.6)
 		return null;
 	
+	var lastHand = points[points.length-1];
+	
 	var x = hand.p[0] / 4.0;
 	var y = hand.p[1] / 4.0;
+	var s = hand.s;
 	
 	x = -x;
 	y = -y;
@@ -49,13 +54,19 @@ function convertToPoint(points, hand)
 	var cdx = x+cwd2;
 	var cdy = y+chd2;
 
-	return [cdx, cdy];
+	var dx = cdx - lastHand[0];
+	var dy = cdy - lastHand[1];
+	console.log("hand moved " + (dx*dx + dy*dy));
+	if ((dx*dx + dy*dy) > (SPEED_THRESHOLD * SPEED_THRESHOLD))
+		s = lastHand[2];
+
+	return [cdx, cdy, s];
 }
 
 function process(data)
 {
-	// iterate just the first user, we will do more later
-	for (var i=0; i<data.length && i<1; ++i)
+	// iterate the users
+	for (var i=0; i<data.length; ++i)
 	{
 		$('#debug').text(JSON.stringify(data[i].rhand.s) +"|"+ JSON.stringify(data[i].lhand.s));
 		
@@ -82,7 +93,8 @@ function drawHand (hand)
 	context.beginPath();
     context.arc(hand[0], hand[1], 10, 0, 2 * Math.PI, false);
 	context.fillStyle = 'red';
-	context.fill();
+	if (hand[2] > THRESHOLD)
+		context.fill();
     context.lineWidth = 1;
     context.strokeStyle = 'white';
     context.stroke();
@@ -92,20 +104,29 @@ function renderPoints (points, color)
 {	
     context.lineWidth = 5;
 
-	context.beginPath();
-
-	for(var i=0;i<points.length;++i)
+    var i=0, drawing=false;
+	for(;i<points.length;++i)
 	{
-		var p = points[i];
-		if (i>0)
-			context.lineTo(p[0], p[1]);
-		
-		context.moveTo(p[0], p[1]);
+		context.beginPath();
+		for (;i<points.length; ++i)
+		{
+			var p = points[i];
+			if (p[2]<THRESHOLD)
+			{
+				drawing = false;
+				break;
+			}
+			
+			if (drawing)
+				context.lineTo(p[0], p[1]);
+			
+			context.moveTo(p[0], p[1]);
+			drawing = true;
+		}		
+		context.strokeStyle = color;
+		context.stroke();
 	}
 	
-	context.strokeStyle = color;
-	context.stroke();
-
 	drawHand(rhand);
 	drawHand(lhand);
 }

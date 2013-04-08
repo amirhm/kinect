@@ -546,6 +546,7 @@
 				F6DFE78D16FF7D1200A10E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,3 +7,6 @@
 [submodule "lib/kinect-sdk/libfreenect"]
 	path = lib/kinect-sdk/libfreenect
 	url = git://github.com/OpenKinect/libfreenect.git
+[submodule "lib/GeometricTools"]
+	path = lib/GeometricTools
+	url = https://github.com/timprepscius/GeometricTools.git
