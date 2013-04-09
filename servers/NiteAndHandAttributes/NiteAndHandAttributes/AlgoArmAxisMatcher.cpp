@@ -102,22 +102,25 @@ float AlgoArmAxisMatcher::valueAt (const std::vector<float> &segments, int at)
 
 float AlgoArmAxisMatcher::match (const std::vector<float> &segments)
 {
+	// go through our matching learned values
 	float finalValue = 0;
 	for (int i=0; i<middleAndWeights.size(); ++i)
 	{
+		// use known value and the given
 		auto &m = middleAndWeights[i];
 		float v = valueAt(segments, i);
 		if (v == -1)
 			break;
 			
+		// calculate the probability it is a pointing finger or a closed hand
 		float dv = (v - m.first) * m.second;
-//		std::cout << "(" << v << "," << m.first << "," << m.second << ":" << dv << ") ";
+		
+		// add the probability
 		finalValue += dv;
 		
 	}
 	
-//	std::cout << "\n";
-	
+	// return the final probability
 	return finalValue;
 }
 

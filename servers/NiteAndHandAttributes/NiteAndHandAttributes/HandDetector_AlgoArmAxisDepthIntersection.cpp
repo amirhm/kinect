@@ -143,9 +143,9 @@ void HandDetector_AlgoArmAxisDepthIntersection::detectHandState (
 	}
 	
 	handStateOut = handStateMatcher.match(intersectionAreas);
-	// log it
-
+}
 /*
+	// log it
 	static int frame = 0;
 	std::cout << frame++;
 
@@ -153,8 +153,8 @@ void HandDetector_AlgoArmAxisDepthIntersection::detectHandState (
 	for (float f : intersectionAreas)
 		std::cout << "," << f;
 	std::cout << "\n";
-*/
 }
+*/
 
 std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 	nite::UserTracker &userTracker,
@@ -163,6 +163,7 @@ std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 	ComputationDebugger *debugger
 )
 {
+	// make sure we have all the frames we need
 	openni::VideoFrameRef depthFrame = userTrackerFrame.getDepthFrame();
 	if (!depthFrame._getFrame())
 		return NO_RESULT();
@@ -172,8 +173,10 @@ std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 		
 	const nite::UserMap& userLabels = userTrackerFrame.getUserMap();
 
+	// create a coordinate converter
 	CoordConverter coordinateConverter(userTracker, depthFrame);
 
+	// we will iterate through both sides
 	std::vector<std::pair<const nite::SkeletonJoint *, const nite::SkeletonJoint *> > arms;
 	arms.push_back(
 		std::pair<const nite::SkeletonJoint *, const nite::SkeletonJoint *>(
@@ -185,12 +188,17 @@ std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 			&user.getSkeleton().getJoint(nite::JOINT_LEFT_ELBOW), &user.getSkeleton().getJoint(nite::JOINT_LEFT_HAND)
 		)
 	);
+	
+	// the final results
 	std::vector<float> results;
+	
+	// iterate
 	for (auto &arm : arms)
 	{
 		const nite::SkeletonJoint &lelbow = *arm.first;
 		const nite::SkeletonJoint &lhand = *arm.second;
 
+		// calculate the hand/elbow/arm-axis/up/left.
 		Wm5::Vector3f elbow(lelbow.getPosition().x, lelbow.getPosition().y, lelbow.getPosition().z);
 		Wm5::Vector3f hand(lhand.getPosition().x, lhand.getPosition().y, lhand.getPosition().z);
 		
@@ -213,22 +221,25 @@ std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 		float searchOnArm = (hand-elbow).Length()/2.0f;
 		float searchWidth = searchOnArm/1.2;
 		
+		// find the extent to which we will search
 		Wm5::Vector3f edgeHandSearch = hand + (searchOnArm * armAxis);
+		
 		// should transform the sphere of the search into an ellipse on the screen
 		// but for later.
-
 		if (debugger)
 		{
 			debugger->circle(coordinateConverter.toFrame(edgeHandSearch), 4, Vector3i(0,0,255));
 			debugger->line(coordinateConverter.toFrame(hand), coordinateConverter.toFrame(edgeHandSearch), Vector3i(0,200,255), 2);
 		}
 		
+		// get all the pixels which are in the hand box
 		std::vector<Vector3f> pixels = getPixelsInArea(depthFrame, hand, searchOnArm, userLabels, coordinateConverter);
 		
 		float lastPeak = 0;
 		float peakOut;
 		float handStateOut;
 		
+		// detect the hand
 		std::vector<int> intersectingPixels;
 		detectHandState(
 			pixels, elbow, hand, edgeHandSearch, searchWidth, armAxis, armUp, armLeft, coordinateConverter, debugger,
@@ -236,8 +247,10 @@ std::vector<float> HandDetector_AlgoArmAxisDepthIntersection::getHandState(
 			intersectingPixels
 		);
 		
+		// record the results
 		results.push_back(handStateOut);
 		
+		// do some debugging
 		if (handStateOut > 0)
 		{
 			if (debugger)
